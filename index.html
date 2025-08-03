@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Budget App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add New Transaction</h1>
+        <form id="budget-form">
+            <input type="text" id="description" placeholder="Description (e.g., Coffee, Salary)" required>
+            <input type="number" id="amount" placeholder="Amount" step="0.01" required>
+
+            <div class="type-selector">
+                <input type="radio" id="expense" name="type" value="Expense" checked>
+                <label for="expense">Expense</label>
+                <input type="radio" id="income" name="type" value="Income">
+                <label for="income">Income</label>
+            </div>
+
+            <button type="submit" id="submit-button">Add Transaction</button>
+        </form>
+        <p id="status-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
